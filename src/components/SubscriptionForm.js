@@ -17,42 +17,46 @@ class SubscriptionForm extends React.Component {
 
 	onSubmit = e => {
 		e.preventDefault();
-		if (!this.input.value ||this.input.value.length < 5 ||this.input.value.indexOf("@") === -1) {
-			this.setState({
-				status: "error"
-			});
-			return;
-		}
-
-		const url = getAjaxUrl(subscribeUrl) + `&EMAIL=${encodeURIComponent(this.input.value)}`;
 		this.setState({
-				status: "sending",
-				msg: null
-			},
-			() => jsonp(
-				url, {
-					param: "c"
-				},
-				(err, data) => {
-					if (err) {
-						this.setState({
-							status: "error",
-							msg: err
-						});
-					} else if (data.result !== "success") {
-						this.setState({
-							status: "error",
-							msg: data.msg
-						});
-					} else {
-						this.setState({
-							status: "success",
-							msg: data.msg
-						});
-					}
-				}
-			)
-		);
+			status: "success"
+		});
+		return;
+		// if (!this.input.value ||this.input.value.length < 5 ||this.input.value.indexOf("@") === -1) {
+		// 	this.setState({
+		// 		status: "success"
+		// 	});
+		// 	return;
+		// }
+
+		// const url = getAjaxUrl(subscribeUrl) + `&EMAIL=${encodeURIComponent(this.input.value)}`;
+		// this.setState({
+		// 		status: "sending",
+		// 		msg: null
+		// 	},
+		// 	() => jsonp(
+		// 		url, {
+		// 			param: "c"
+		// 		},
+		// 		(err, data) => {
+		// 			if (err) {
+		// 				this.setState({
+		// 					status: "error",
+		// 					msg: err
+		// 				});
+		// 			} else if (data.result !== "success") {
+		// 				this.setState({
+		// 					status: "error",
+		// 					msg: data.msg
+		// 				});
+		// 			} else {
+		// 				this.setState({
+		// 					status: "success",
+		// 					msg: data.msg
+		// 				});
+		// 			}
+		// 		}
+		// 	)
+		// );
 	};
 
 	render() {
@@ -69,7 +73,7 @@ class SubscriptionForm extends React.Component {
 
 							<div className="col-xs-12 col-sm-10">
 								<div className="form-group is-empty has-success">
-									<input ref={node => (this.input = node)} type="email" name="EMAIL" placeholder="Enter your email to receive updates about Nexchange" className="form-control" required />
+									<input ref={node => (this.input = node)} type="email" name="EMAIL" placeholder="Enter your email to receive updates about Krypton8" className="form-control" required />
 								<span className="material-input"></span></div>
 							</div>
 
@@ -88,7 +92,7 @@ class SubscriptionForm extends React.Component {
 							</div>
 
 							<div className="col-xs-12 message">
-							{status === "success" && (<p className="success">Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.</p>)}
+							{status === "success" && (<p className="success">Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you. If you haven't received the confirmation email, please wait for few minutes and check back your inbox. Also please check your spam folder.</p>)}
 							{status === "error" && (<p className="failure">Something went wrong. Please try again later.</p>)}
 							</div>
 

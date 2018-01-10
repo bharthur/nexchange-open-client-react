@@ -29,7 +29,7 @@ class OrderPaid extends Component {
 				<h5>We are now preparing to release your coins</h5>
 				<h5>Transaction ID: <a href={helpers.getBlockchainUrl(this.coin.code, this.txId)} target="_blank" className="text-green">{this.txId}</a></h5>
 
-				<a href={`${config.API_BASE_URL}/orders/${this.props.match.params.orderRef}`} target="_blank"><h4 style={{margin: "25px 0 0", "fontWeight": "500"}}>See your order details on our API</h4></a>
+				<a href={`/order/${this.props.match.params.orderRef}`} target="_blank"><h4 style={{margin: "25px 0 0", "fontWeight": "500"}}>See your order details</h4></a>
 				<a href={helpers.getBlockchainUrl(this.coin.code, this.txId)} target="_blank"><h4 style={{margin: "5px 0 18px", "fontWeight": "500"}}>See your order details on blockchain</h4></a>
 			</div>
 		)

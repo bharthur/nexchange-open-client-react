@@ -35,9 +35,9 @@ class FAQ extends Component {
               question="Who are you?"
               answer={
                 <div>
-                  <p>Nexchange is an automated cryptocurrency exchange service, operated by <a href="https://beta.companieshouse.gov.uk/company/10009845" target="_blank">YOA LTD. (registered company No. 10009845)</a>.</p>
-                  <p>Our VAT number - GB233 5420 37.<br/>Our registered office address - Suite 11, Penhurst House, 352-254 Battersea Park Road, London, England, SW11 3BY.</p>
-                  <p>Our customer support phone number in UK is <a href="tel:+442081442192">+442081442192</a>.</p>
+                  <p>Krypton8 is an automated cryptocurrency exchange. Our goal is to be the fastest, most private, and most convenient way to swap digital currencies, and the exchange rate will always remain competitive.
+                  </p>
+                  <p><a href="mailto:support@krypton8.com">support@krypton8.com</a></p>
                 </div>
               }/>
 
@@ -47,7 +47,7 @@ class FAQ extends Component {
                 <div>
                   <p>We allow you to exchange one cryptocurrency for another. To view our currently supported coins, please click on the coin selection widget in the top of fold of the page.</p>
                   <p>We will be adding more currencies very soon, stay tuned!</p>
-                  <p>Missing your favorite coin? Let us know here: <a href="mailto:support@nexchange.io">support@nexchange.io</a>.</p>
+                  <p>Missing your favorite coin? Let us know here: <a href="mailto:support@krypton8.com">support@krypton8.com</a>.</p>
                 </div>
               }/>
 
@@ -177,14 +177,14 @@ class FAQ extends Component {
             <QuestionAnswer
               question="What does the beta version include?"
               answer={
-                <p>At the moment, only the core exchange feature of our product is available for users to enjoy as part of our public beta initiative, which means that everything you see on screen works perfectly. Our goal with the beta is to expose Nexchange to as many users as possible in order to fine-tune our design and user experience to the highest possible degree. To achieve this goal, your input as a user is invaluable. If you have any feedback for us, please feel free to contact us at <a href="mailto:support@nexchange.io">support@nexchange.io</a>.</p>
+                <p>At the moment, only the core exchange feature of our product is available for users to enjoy as part of our public beta initiative, which means that everything you see on screen works perfectly. Our goal with the beta is to expose Krypton8 to as many users as possible in order to fine-tune our design and user experience to the highest possible degree. To achieve this goal, your input as a user is invaluable. If you have any feedback for us, please feel free to contact us at <a href="mailto:support@krypton8.com">support@krypton8.com</a>.</p>
               }/>
 
             <QuestionAnswer
               question="Do I need a wallet? How do I get one?"
               answer={
                 <div>
-                  <p>In order to use Nexchange, you need to have your own wallet. The main upside of this feature is that we don’t hold your coins, and thus you retain full control over your assets at all times.</p>
+                  <p>In order to use Krypton8, you need to have your own wallet. The main upside of this feature is that we don’t hold your coins, and thus you retain full control over your assets at all times.</p>
                   <p>If you need some help obtaining a wallet for your desired cryptocurrency, please look here:</p>
                   <ul>
                     <li>Bitcoin (BTC): <a href="https://bitcoin.org/en/choose-your-wallet">https://bitcoin.org/en/choose-your-wallet</a></li>

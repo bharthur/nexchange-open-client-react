@@ -24,7 +24,6 @@ class Home extends Component {
 		  <div>
 		    <Hero />
 		    <RecentOrders />
-		    <Testimonials />
 		    <PriceComparison />
 		    <About />
 		    <SubscriptionForm />

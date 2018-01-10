@@ -40,7 +40,7 @@ class PriceComparison extends Component {
     showBestRate(shapeshiftRate, changellyRate, nexchangeRate) {
         let rates = [shapeshiftRate, changellyRate, nexchangeRate],
             min = Math.max.apply(null, rates),
-            info = ['shapeshift', 'changelly', 'nexchange2'];
+            info = ['shapeshift', 'changelly', 'krypton8'];
 
         let max = 0,
             idx = null;
@@ -148,7 +148,7 @@ class PriceComparison extends Component {
                                     <thead>
                                         <tr>
                                             <th className="text-center"></th>
-                                            <th><img className="nexchange-logo" src="/img/prices/nexchange2.png" alt="Nexchange" /></th>
+                                            <th><img className="nexchange-logo" src="/img/prices/krypton8.png" alt="Krypton8" /></th>
                                             <th><img src="/img/prices/shapeshift.png" alt="Shapeshift" /></th>
                                             <th><img src="/img/prices/changelly.png" alt="Changelly" /></th>
                                             <th>Best rate</th>
