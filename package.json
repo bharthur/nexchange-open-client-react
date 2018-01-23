@@ -71,7 +71,9 @@
     "unbuild": "rm -rf build",
     "build": "node scripts/build.js",
     "sync": "aws s3 sync build/ s3://krypton8.com --profile krypton8",
-    "invalidate": "aws cloudfront create-invalidation --distribution-id E1S83PDUC1VUUG --paths /index.html --profile krypton8",
+    "invalidate_com": "aws cloudfront create-invalidation --distribution-id E1S83PDUC1VUUG --paths /index.html --profile krypton8",
+    "invalidate_ca": "aws cloudfront create-invalidation --distribution-id E1SVQHENZWWXHL --paths /index.html --profile krypton8",
+    "invalidate": "yarn invalidate_com && yarn invalidate_ca",
     "deploy": "yarn build && yarn sync && yarn invalidate && echo '🚀  Deployed!'",
     "test": "node scripts/test.js --env=jsdom"
   },
